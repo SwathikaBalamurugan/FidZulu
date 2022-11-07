@@ -3,7 +3,8 @@ const router = express.Router();
 
 const {
     getTeamDetails,
-    getFoodDetails
+    getFoodDetails,
+    postFoodDetails
 } = require("../controller/food.controller");
 
 router
@@ -12,5 +13,6 @@ router
 
 router.route("/food")
         .get(getFoodDetails)
+        .post(postFoodDetails)
 
 module.exports = router;
