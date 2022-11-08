@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 const foodRoutes = require("./api/routes/food.routes");
 
-app.use("/api/v1", foodRoutes);
+app.use("", foodRoutes);
 
 const port = 3034;
 app.listen(port,()=>{
